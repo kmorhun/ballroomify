@@ -1,0 +1,19 @@
+# Ballroomify
+
+<!-- <p align="left"> -->
+<!-- <img src="./images/shoes.jpg" alt="Ballroom Shoes" width="50%"> -->
+<!-- </p> -->
+![Image of Ballroom shoes]("./images/shoes.jpg")
+
+Ballroomify is a toy library intended for testing using Sphinx and ReadTheDocs to generate and publish documentation.
+
+And I'm a ballroom dancer, hence the theme. 
+
+## Using the tool
+See [this](./basics.md) page for an overview of how to use the tool.
+
+## Examples
+See [this](https://github.com/kmorhun/ballroomify/blob/main/examples/example.ipynb) interactive notebook to see the library in action 💃🕺
+
+## Joining the team
+You can check out the MIT Ballroom Dance team at the team's [website](http://ballroom.mit.edu/)

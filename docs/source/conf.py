@@ -17,7 +17,9 @@ release = '0.0.0'
 extensions = [
     "myst_parser",
     "sphinx.ext.duration",
-    "sphinx.ext.autosectionlabel"
+    "sphinx.ext.autosectionlabel",
+    "sphinx_copybutton",
+    "nbsphinx",
 ]
 
 myst_enable_extesions = ["html_images"]

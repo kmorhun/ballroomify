@@ -12,7 +12,7 @@ See {doc}`basics` page for an overview of how to use the tool.
 See installation instructions in {ref}`Installation`.
 
 ## Examples
-See [this](https://github.com/kmorhun/ballroomify/blob/main/examples/example.ipynb) interactive notebook to see the library in action 💃🕺
+See Example below for an interactive notebook to see the library in action 💃🕺
 
 ## Joining the team
 You can check out the MIT Ballroom Dance team at the team's [website](http://ballroom.mit.edu/)
@@ -22,6 +22,7 @@ You can check out the MIT Ballroom Dance team at the team's [website](http://bal
 :maxdepth: 2
 
 basics
+examples/example
 ```
 
 <!-- ## Indices and tables

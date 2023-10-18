@@ -28,4 +28,5 @@ issue-tracker = "https://github.com/kmorhun/ballroomify/issues"
 doc = [
     "sphinx~=4.2.0",
     "myst-parser",
+    "sphinx-rtd-theme"
 ]

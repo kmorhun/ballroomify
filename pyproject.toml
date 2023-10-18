@@ -27,4 +27,5 @@ issue-tracker = "https://github.com/kmorhun/ballroomify/issues"
 [project.optional-depedencies]
 doc = [
     "sphinx~=4.2.0",
+    "myst-parser",
 ]

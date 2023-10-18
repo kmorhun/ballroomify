@@ -1,0 +1,47 @@
+[project]
+name = "ballroomify"
+version = "0.0.0"
+description = "toy library to ballroomify everything"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "ballroom",
+    "dance",
+]
+authors = [
+    { name = "Kateryna Morhun", email = "kmorhun@mit.edu" },
+]
+maintainers = [
+    { name = "Kateryna Morhun", email = "kmorhun@mit.edu" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+repository = "https://github.com/kmorhun/ballroomify"
+documentation = "https://ballroomify.readthedocs.io/en/latest/?badge=latest"
+issue-tracker = "https://github.com/kmorhun/ballroomify/issues"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools >= 42",
+    "wheel",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements-dev.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+
+[tool.setuptools.package-data]
+"ballroomify.artifacts.sample.brk_sw_lines" = ["*"]
+"ballroomify" = ["logging.conf"]

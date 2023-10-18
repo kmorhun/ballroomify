@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ballroomify
+Version: 0.0.0
+Summary: toy library to ballroomify everything
+Author-email: Kateryna Morhun <kmorhun@mit.edu>
+Maintainer-email: Kateryna Morhun <kmorhun@mit.edu>
+Project-URL: repository, https://github.com/kmorhun/ballroomify
+Project-URL: documentation, https://ballroomify.readthedocs.io/en/latest/?badge=latest
+Project-URL: issue-tracker, https://github.com/kmorhun/ballroomify/issues
+Keywords: ballroom,dance
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: sphinx
+
+# Ballroomify
+
+<p align="left">
+<img src="./images/shoes.jpg" alt="Ballroom Shoes" width="50%">
+</p>
+
+Ballroomify is a toy library intended for testing using Sphinx and ReadTheDocs to generate and publish documentation.
+
+And I'm a ballroom dancer, hence the theme. 
+
+## Using the tool
+See [this](https://github.com/kmorhun/ballroomify/blob/main/BASICS.md) page for an overview of how to use the tool.
+
+## Examples
+See [this](https://github.com/kmorhun/ballroomify/blob/main/examples/example.ipynb) interactive notebook to see the library in action 💃🕺
+
+## Joining the team
+You can check out the MIT Ballroom Dance team at the team's [website](http://ballroom.mit.edu/)

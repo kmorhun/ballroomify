@@ -1,8 +1,9 @@
 README.md
 pyproject.toml
 requirements-dev.txt
+src/dances.py
+src/main.py
 src/ballroomify.egg-info/PKG-INFO
 src/ballroomify.egg-info/SOURCES.txt
 src/ballroomify.egg-info/dependency_links.txt
-src/ballroomify.egg-info/requires.txt
 src/ballroomify.egg-info/top_level.txt

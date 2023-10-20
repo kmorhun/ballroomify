@@ -51,21 +51,16 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dances.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dances.Style.compete"><code class="docutils literal notranslate"><span class="pre">Style.compete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dances.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dances.Dance"><code class="docutils literal notranslate"><span class="pre">Dance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dances.InternationalStandard"><code class="docutils literal notranslate"><span class="pre">InternationalStandard</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#dances.Dance"><code class="docutils literal notranslate"><span class="pre">Dance</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dances.Dance.__init__"><code class="docutils literal notranslate"><span class="pre">Dance.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dances.Dance.perform"><code class="docutils literal notranslate"><span class="pre">Dance.perform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-main">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#main.evaluate"><code class="docutils literal notranslate"><span class="pre">evaluate()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#dances.InternationalStandard"><code class="docutils literal notranslate"><span class="pre">InternationalStandard</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dances.InternationalStandard.__init__"><code class="docutils literal notranslate"><span class="pre">InternationalStandard.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dances.InternationalStandard.compete"><code class="docutils literal notranslate"><span class="pre">InternationalStandard.compete()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#main.evaluate"><code class="docutils literal notranslate"><span class="pre">evaluate()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -108,6 +103,9 @@
 </section>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading"></a></h3>
+<p>See the <code class="xref py py-func docutils literal notranslate"><span class="pre">InternationalStandard()</span></code> class for an example of an instantiation of this class</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="dances.Style">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dances.</span></span><span class="sig-name descname"><span class="pre">Style</span></span><a class="headerlink" href="#dances.Style" title="Link to this definition"></a></dt>
@@ -154,10 +152,12 @@ of the format “Performing {name} at {number} bpm”</p>
 
 </dd></dl>
 
+<p>An Instantiation of the <code class="xref py py-func docutils literal notranslate"><span class="pre">Style()</span></code> class</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="dances.InternationalStandard">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dances.</span></span><span class="sig-name descname"><span class="pre">InternationalStandard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard" title="Link to this definition"></a></dt>
-<dd><dl class="py method">
+<dd><p>A description of the International Standard style</p>
+<dl class="py method">
 <dt class="sig sig-object py" id="dances.InternationalStandard.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard.__init__" title="Link to this definition"></a></dt>
 <dd><p>Docstring style: Google</p>
@@ -192,7 +192,10 @@ from self.dances</p>
 
 </dd></dl>
 
-<dl class="py function" id="module-main">
+</section>
+<section id="module-main">
+<span id="functions"></span><h3>Functions<a class="headerlink" href="#module-main" title="Link to this heading"></a></h3>
+<dl class="py function">
 <dt class="sig sig-object py" id="main.evaluate">
 <span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rankings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.evaluate" title="Link to this definition"></a></dt>
 <dd><p>Docstring style: reST.</p>
@@ -211,6 +214,7 @@ returns the dancers average ranking and prints the result out.</p>
 </dl>
 </dd></dl>
 
+</section>
 </section>
 </section>
 

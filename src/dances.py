@@ -13,7 +13,7 @@ class Style(ABC):
 class Dance():
     def __init__(self, name, time_signature, bpm):
         """ Docstring style: reST.
-        
+
         Creates a Dance Object
         
         :param name: the name of the dance
@@ -36,6 +36,8 @@ class Dance():
         print(f"Performing {self.name} at {self.bpm} bpm")
 
 class InternationalStandard(Style):
+    """A description of the International Standard style
+    """
     def __init__(self, dances):
         """ Docstring style: Google
         

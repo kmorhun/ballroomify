@@ -1,8 +1,8 @@
 import numpy as np
 
 def evaluate(style, rankings):
-    """
-    Docstring style: reST.
+    """Docstring style: reST.
+
     given a list of rankings for a particular style, 
     returns the dancers average ranking and prints the result out.
     

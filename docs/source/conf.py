@@ -19,6 +19,7 @@ extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
     "sphinx_copybutton",
     "nbsphinx",
 ]

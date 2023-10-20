@@ -126,14 +126,14 @@
 <dd><dl class="py method">
 <dt class="sig sig-object py" id="dances.Dance.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_signature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bpm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.Dance.__init__" title="Link to this definition"></a></dt>
-<dd><p>Docstring style: reST.
-Creates a Dance Object</p>
+<dd><p>Docstring style: reST.</p>
+<p>Creates a Dance Object</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<em>string</em>) – the name of the dance</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – the name of the dance</p></li>
 <li><p><strong>style</strong> (<a class="reference internal" href="#dances.Style" title="dances.Style"><em>Style</em></a>) – the style of the dance</p></li>
-<li><p><strong>time_signature</strong> (<em>string</em>) – the time signature of the dance</p></li>
+<li><p><strong>time_signature</strong> (<em>str</em>) – the time signature of the dance</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -161,12 +161,33 @@ of the format “Performing {name} at {number} bpm”</p>
 <dt class="sig sig-object py" id="dances.InternationalStandard.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard.__init__" title="Link to this definition"></a></dt>
 <dd><p>Docstring style: Google</p>
+<p>Initializes the InternationalStandard class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dances</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dances.Dance" title="dances.Dance"><em>Dance</em></a><em>]</em>) – A list of Dance objects that make up this style</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="dances.InternationalStandard.compete">
 <span class="sig-name descname"><span class="pre">compete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard.compete" title="Link to this definition"></a></dt>
 <dd><p>Docstring style: NumPy</p>
+<p>Simulates a ballroom competition final in this style by generating a list of rankings
+from 1 to 7, inclusive.
+1 means 1st place, and 7 means 7th place.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of rankings between 1 and 7 (inclusive), where each element is the dancer’s rank in the corresponding dance
+from self.dances</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[int]</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -174,8 +195,8 @@ of the format “Performing {name} at {number} bpm”</p>
 <dl class="py function" id="module-main">
 <dt class="sig sig-object py" id="main.evaluate">
 <span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rankings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.evaluate" title="Link to this definition"></a></dt>
-<dd><p>Docstring style: reST.
-given a list of rankings for a particular style, 
+<dd><p>Docstring style: reST.</p>
+<p>given a list of rankings for a particular style,
 returns the dancers average ranking and prints the result out.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

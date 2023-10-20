@@ -50,6 +50,24 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dances.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dances.Style.compete"><code class="docutils literal notranslate"><span class="pre">Style.compete()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dances.Dance"><code class="docutils literal notranslate"><span class="pre">Dance</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dances.Dance.__init__"><code class="docutils literal notranslate"><span class="pre">Dance.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dances.Dance.perform"><code class="docutils literal notranslate"><span class="pre">Dance.perform()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dances.InternationalStandard"><code class="docutils literal notranslate"><span class="pre">InternationalStandard</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dances.InternationalStandard.__init__"><code class="docutils literal notranslate"><span class="pre">InternationalStandard.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dances.InternationalStandard.compete"><code class="docutils literal notranslate"><span class="pre">InternationalStandard.compete()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#main.evaluate"><code class="docutils literal notranslate"><span class="pre">evaluate()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples/example.html">Examples!</a></li>
@@ -87,6 +105,91 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>ballroomify
 </pre></div>
 </div>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dances.Style">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dances.</span></span><span class="sig-name descname"><span class="pre">Style</span></span><a class="headerlink" href="#dances.Style" title="Link to this definition"></a></dt>
+<dd><p>An abstract Style class that defines what all Styles should be capble of</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dances.Style.compete">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">compete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dances.Style.compete" title="Link to this definition"></a></dt>
+<dd><p>An abstract compete method for instantiated styles to populate</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dances.Dance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dances.</span></span><span class="sig-name descname"><span class="pre">Dance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_signature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bpm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.Dance" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="dances.Dance.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_signature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bpm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.Dance.__init__" title="Link to this definition"></a></dt>
+<dd><p>Docstring style: reST.
+Creates a Dance Object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>string</em>) – the name of the dance</p></li>
+<li><p><strong>style</strong> (<a class="reference internal" href="#dances.Style" title="dances.Style"><em>Style</em></a>) – the style of the dance</p></li>
+<li><p><strong>time_signature</strong> (<em>string</em>) – the time signature of the dance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dances.Dance.perform">
+<span class="sig-name descname"><span class="pre">perform</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dances.Dance.perform" title="Link to this definition"></a></dt>
+<dd><p>Prints a string describing the performance of this dance
+of the format “Performing {name} at {number} bpm”</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dances.InternationalStandard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dances.</span></span><span class="sig-name descname"><span class="pre">InternationalStandard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="dances.InternationalStandard.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard.__init__" title="Link to this definition"></a></dt>
+<dd><p>Docstring style: Google</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dances.InternationalStandard.compete">
+<span class="sig-name descname"><span class="pre">compete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dances.InternationalStandard.compete" title="Link to this definition"></a></dt>
+<dd><p>Docstring style: NumPy</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function" id="module-main">
+<dt class="sig sig-object py" id="main.evaluate">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rankings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.evaluate" title="Link to this definition"></a></dt>
+<dd><p>Docstring style: reST.
+given a list of rankings for a particular style, 
+returns the dancers average ranking and prints the result out.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>style</strong> (<a class="reference internal" href="#dances.Style" title="dances.Style"><em>Style</em></a>) – the style performed</p></li>
+<li><p><strong>rankings</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – a list of numbers from scores received by calling perform() on dances</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 

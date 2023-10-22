@@ -24,7 +24,7 @@ repository = "https://github.com/kmorhun/ballroomify"
 documentation = "https://ballroomify.readthedocs.io/en/latest/?badge=latest"
 issue-tracker = "https://github.com/kmorhun/ballroomify/issues"
 
-[project.optional-depedencies]
+[project.optional-dependencies]
 doc = [
     "sphinx~=4.2.0",
     "myst-parser",

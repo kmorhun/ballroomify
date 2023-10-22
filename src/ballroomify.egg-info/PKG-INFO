@@ -11,22 +11,18 @@ Keywords: ballroom,dance
 Classifier: Programming Language :: Python :: 3.10
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
+Provides-Extra: doc
+Requires-Dist: sphinx~=4.2.0; extra == "doc"
+Requires-Dist: myst_parser; extra == "doc"
+Requires-Dist: sphinx-rtd-theme; extra == "doc"
 
 # Ballroomify
 
-<p align="left">
+<!-- <p align="left"> -->
 <img src="./images/shoes.jpg" alt="Ballroom Shoes" width="50%">
-</p>
+<!-- </p> -->
+<!-- ![Image of Ballroom shoes]("images/shoes.jpg") -->
 
 Ballroomify is a toy library intended for testing using Sphinx and ReadTheDocs to generate and publish documentation.
 
-And I'm a ballroom dancer, hence the theme. 
-
-## Using the tool
-See [this](https://github.com/kmorhun/ballroomify/blob/main/BASICS.md) page for an overview of how to use the tool.
-
-## Examples
-See [this](https://github.com/kmorhun/ballroomify/blob/main/examples/example.ipynb) interactive notebook to see the library in action 💃🕺
-
-## Joining the team
-You can check out the MIT Ballroom Dance team at the team's [website](http://ballroom.mit.edu/)
+And I'm a ballroom dancer, hence the theme.

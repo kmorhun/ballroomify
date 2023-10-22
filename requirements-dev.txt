@@ -1,4 +1,5 @@
 numpy
 sphinx
 myst_parser
+sphinx_copybutton
 sphinx-rtd-theme

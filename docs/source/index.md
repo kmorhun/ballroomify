@@ -4,7 +4,6 @@
 % contain the root `toctree` directive.
 
 ```{include} ../../README.md
-:relative-images:
 ```
 ## Using the tool
 See {doc}`basics` page for an overview of how to use the tool.
